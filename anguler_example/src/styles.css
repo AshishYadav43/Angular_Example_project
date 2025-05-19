@@ -23,15 +23,17 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 }
 
 .sidebar a {
-  display: block;
-  color: white;
-  margin: 10px 0;
-  text-decoration: none;
-  font-weight: 500;
+    display: block;
+    color: white;
+    margin: 10px 0;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    padding-top: 10px;
 }
 
 .sidebar a:hover {
-  background-color: #37474f;
+  background-color:rgb(224, 222, 222);
   padding-left: 10px;
   border-radius: 4px;
 }
