@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'anguler_example';
+
+   constructor(private router: Router) {}
+
+  get showLayout(): boolean {
+    // Adjust the condition based on your actual login route
+    return this.router.url !== '/login';
+  }
 }
