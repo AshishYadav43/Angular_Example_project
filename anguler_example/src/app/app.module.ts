@@ -18,7 +18,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { ListingDetailsComponent } from './listing-details/listing-details.component';
-
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [
@@ -44,7 +44,7 @@ import { ListingDetailsComponent } from './listing-details/listing-details.compo
     MatButtonModule,
     FormsModule,
     ReactiveFormsModule,
-
+    MatSnackBarModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
