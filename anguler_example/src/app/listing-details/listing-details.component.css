@@ -1,0 +1,29 @@
+.container {
+    padding: 10px;
+    margin: 10px;
+}
+
+mat-form-field {
+    width: 90vw;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.button-container .btn {
+    width: 10vw;
+    background-color: rgb(31, 31, 235);
+    color: white;
+}
+
+.heading {
+    text-align: center;
+}
