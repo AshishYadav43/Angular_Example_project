@@ -5,3 +5,10 @@
 .sidebar {
     font-size: 50px !important;
 }
+
+.toggle-btn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+}

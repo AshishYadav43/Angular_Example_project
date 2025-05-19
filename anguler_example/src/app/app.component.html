@@ -4,26 +4,31 @@
 </div>
 <app-footer></app-footer> -->
 
-<mat-sidenav-container class="sidenav-container" *ngIf="showLayout">
-  <mat-sidenav mode="side" opened class="app-sidenav">
-    <div class="sidebar" style="font-size: 80px;">
-      <a mat-button routerLink="/dashboard">Dashboard</a>
-      <a mat-button routerLink="/listing">Listing</a>
-      <!-- Add more links as needed -->
-    </div>
-  </mat-sidenav>
+<mat-sidenav-container class="sidenav-container">
+    <mat-sidenav #sidenav mode="side" [(opened)]="isSidenavOpen" class="sidenav">
+        <mat-nav-list>
+            <a mat-list-item routerLink="/dashboard">Dashboard</a>
+            <a mat-list-item routerLink="/listing">Listing</a>
+            <!-- add more links here -->
+        </mat-nav-list>
+    </mat-sidenav>
 
-  <mat-sidenav-content>
-    <app-header></app-header>
+    <mat-sidenav-content>
+        <mat-toolbar color="primary">
+            <button mat-icon-button (click)="toggleSidenav()">
+                <mat-icon>menu</mat-icon>
+            </button>
+            <app-header></app-header>
+        </mat-toolbar>
 
-    <div class="main-content">
-      <router-outlet></router-outlet>
-    </div>
+        <div class="main-content">
 
-    <app-footer></app-footer>
-  </mat-sidenav-content>
+            <router-outlet></router-outlet>
+            <app-footer></app-footer>
+        </div>
+    </mat-sidenav-content>
 </mat-sidenav-container>
 
-<!-- Show only login without layout -->
-<router-outlet *ngIf="!showLayout"></router-outlet>
 
+<!-- Only show login page -->
+<router-outlet *ngIf="!showLayout"></router-outlet>

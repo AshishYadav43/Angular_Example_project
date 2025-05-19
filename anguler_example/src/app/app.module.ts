@@ -23,6 +23,9 @@ import { ListingDetailsComponent } from './listing-details/listing-details.compo
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatCardModule } from '@angular/material/card';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatIconModule } from '@angular/material/icon';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatListModule } from '@angular/material/list';
 
 @NgModule({
   declarations: [
@@ -52,6 +55,11 @@ import { MatSidenavModule } from '@angular/material/sidenav';
     MatToolbarModule,
     MatCardModule,
     MatSidenavModule,
+    MatIconModule,
+    MatDividerModule,
+    MatInputModule,
+    MatListModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
