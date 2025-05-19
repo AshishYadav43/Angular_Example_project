@@ -9,6 +9,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { NgChartsModule } from 'ng2-charts';
+
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import { SidebarComponent } from './sidebar/sidebar.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    NgChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
